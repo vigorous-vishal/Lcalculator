@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love generator</title>
+<style>
+    *{
+    margin: 0;
+    
+}
+
+
+
+
+
+.box1
+{
+    height: 730px;
+    width: 400px;
+    background-color: rgb(252, 132, 244);
+    border: double 4px rgb(255, 0, 0);
+    position: relative;
+    display: block;
+    background-image: url("homepage.avif");
+    background-size: 400px;
+    background-repeat: no-repeat;
+}
+
+.box2
+{
+    height: 730px;
+    width: 400px;
+    background-color: rgb(252, 132, 244);
+    border: double 4px rgb(255, 0, 0);
+    position: relative;
+    display: block;
+    background-image: url('heart.png');
+    background-position: -55px ;
+}
+
+.box3
+{
+    height: 730px;
+    width: 400px;
+    background-color: rgb(252, 132, 244);
+    border: double 4px rgb(255, 0, 0);
+    position: relative;
+    display: block;
+}
+
+.htext
+{
+    margin: 15px;
+    margin-top: 70%;
+    position: absolute;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.ptext
+{
+    margin: 15px;
+    position: absolute;
+    margin-top: 96%;
+    font-size: large;
+    line-height: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn1
+{
+    width: 150px;
+    height: 40px;
+    margin-left: 30%;
+    margin-top: 150%;
+    position: absolute;
+    font-size: large;
+    background-color: rgb(255, 0, 0);
+   
+}
+
+.btn1:hover
+{
+    background-color: rgb(185, 0, 0);
+}
+
+.name
+{
+    height: 30px;
+    width: 180px;
+    position: absolute;
+    margin-left: 25%;
+    margin-top: 90%;
+    position: absolute;
+    border-radius: 5px;
+    border: 3px solid red;
+}
+
+.cname
+{
+    height: 30px;
+    width: 180px;
+    margin-left: 25%;
+    margin-top: 100%;
+    position: absolute;
+    border-radius: 5px;
+    border: 3px solid red;
+}
+
+.submit
+{
+    height: 40px;
+    width: 200px;
+    margin-left: 23%;
+    margin-top: 120%;
+    position: absolute;
+    font-size: large;
+    background-color: rgb(255, 0, 0);
+}
+
+.submit:hover{
+    background-color: rgb(185, 0, 0);
+}
+
+.ptextwo
+{
+    position: absolute;
+    margin-top: 137%;
+    margin-left: 10%;
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    animation: changecolor 1s infinite linear;
+}
+
+@keyframes changecolor {
+    0%{
+        color: black;
+    }
+    50%{
+        color: red;
+    }
+    1000%{
+        color: black;
+    }
+}
+
+.FINISH
+{
+    position: absolute;
+    margin-top: 54%;
+    margin-left: 30px;
+    font-weight: bolder;
+}
+</style>
+</head>
+<body>
+    <section class="section1">
+        <div class="box1">
+            <p class="FINISH">DEVELOPED BY: TECH ASSOCIATION TEAM</p>
+        <h1 class="htext">Scientist Robert SternBerg love theory principle</h1>
+        <p class="ptext">Check the accurate love portion between you and your crush.
+            It will work depends on your name and how you are psychology 
+            related with your name in this environment.
+            It also says how much your crush loves you and also it will 
+            say both of your characters in real life.
+        </p>
+        <button onclick="btn1()" class="btn1">Go!</button>
+        </div>
+    </section>
+
+    <section class="section2">
+        <div class="box2">
+            <form action="https://script.google.com/macros/s/AKfycbzAwdwY_qrtJM-bC6hjY72wm74_P5XVRhzCl-Ivb6CNbpaopx8n5KbDXfODUQEBt28afQ/exec" method="POST" enctype="multipart/form-data">
+            <input type="text" placeholder="Enter your Full Name" name="stu_name" required class="name"><br>
+            <input type="text" placeholder="Enter your Crush's Full Name" name="stu_age" required class="cname"><br>
+            <input type="submit" name="Submit" class="submit">
+                <p class="ptextwo">Click submit to see the result!</p>
+        </form>
+        </div>
+    </section>
+    
+   
+    <script>
+        var section1 = document.querySelector(".section1");
+var section2 = document.querySelector(".section2");
+var section3 = document.querySelector(".section3");
+
+    section1.style.display = "block";
+    section2.style.display = "none";
+    section3.style.display = "none";
+
+function btn1()
+{
+    section1.style.display = 'none';
+    section2.style.display = 'block';
+}
+
+function btn2()
+{
+    section1.style.display = 'none';
+    section2.style.display = 'none';
+    section3.style.display = 'block';
+}
+
+    </script>
+</body>
+</html>
